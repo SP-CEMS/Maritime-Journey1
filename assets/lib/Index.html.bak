@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Libraries-->
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no,
+		initial-scale=1"
+		/>
+		
+		<script defer src="lib/jquery.min.js"></script>
+		<script defer src="lib/anime.min.js"></script>
+		<script src="lib/aframe.min.js"></script>
+		<script defer src="lib/aframe-gif-shader.min.js"></script>
+		<script defer src="lib/aframe-look-at-component.min.js"></script>
+		<script defer src="lib/aframe-animation-component.min.js"></script>
+		<script defer src="lib/aframe-event-set-component.min.js"></script>
+		<script>src = "https://aframe.io/releases/0.7.1/aframe.min.js"</script>
+		<script defer src="lib/horizontalDialogImage.js"></script>
+		<script defer src="lib/aframe-rounded-component.min.js"></script>
+		<script defer src = "lib/videoDialog.js"></script>
+		<script defer src = "lib/audioDialog.js"></script>
+		<script defer src="lib/script_without_introduction.js"></script>
+		<link
+			rel="preload"
+			href="lib/animate.min.css"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
+		/>
+		<noscript><link rel="stylesheet" href="lib/animate.min.css" /></noscript>	
+	</head>
+	<body>
+		<!--Aframe Canvas-->
+		<div id="aframeCanvas">
+			<a-scene>
+
+				<!--Images Collection-->
+				<a-assets timeout="99999">
+
+
+					<img id="arrow" src="icons/arrow.png" />
+				</a-assets>
+				<a-sky id="skybox" radius="10" src="#loc1" rotation="0 270 0"> </a-sky>	
+				<!--Camera & Cursor-->
+				<a-entity
+					id="cam"
+					position="0 0 0"
+					camera
+					look-controls="reverseMouseDrag: true; reverseTouchDrag: true;"
+					wasd-controls-enabled="true"
+					cursor="rayOrigin: mouse"
+				>
+				</a-entity>
+
+				<a-entity id="spots" hotspots>
+					
+					
+
+
+				</a-entity>
+			</a-scene>
+		</div>
+	</body>
+</html>
